@@ -1,0 +1,80 @@
+.reason-to-section {
+  padding: 72px 142px;
+  background-color: #2f241f;
+  color: #e5f0b6;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  .reason-to-title {
+    font-size: 24px;
+  }
+  .title {
+    font-size: 64px;
+    font-weight: 700;
+    text-align: left;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-basis: 33%;
+      p {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: left;
+      }
+      .icon-frame {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 8px;
+        background-color: #e5f0b680;
+        .icon-number {
+          font-weight: 700;
+          font-size: 24px;
+          color: white;
+        }
+        .icon-search {
+          path {
+            fill: #f4f4f4;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .reason-to-section {
+    padding: 32px 24px;
+    gap: 32px;
+    align-items: center;
+    .reason-to-title {
+      font-size: 14px;
+    }
+    .title {
+      font-size: 24px;
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      li {
+        flex-basis: 100%;
+        p {
+          font-size: 15px;
+          font-weight: 700;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
